@@ -1,0 +1,70 @@
+BasedOnStyle: LLVM
+Standard: Latest
+UseTab: Always
+IndentWidth: 4
+TabWidth: 4
+ContinuationIndentWidth: 4
+ColumnLimit: 400
+AccessModifierOffset: -4
+BreakBeforeBraces: Attach
+InsertBraces: true
+SpacesInParens: Custom
+SpacesInParensOptions:
+  InCStyleCasts: true
+  InConditionalStatements: true
+  InEmptyParentheses: true
+  Other: true
+SpacesInSquareBrackets: true
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyBlock: true
+SpaceInEmptyBraces: Always
+SpacesBeforeTrailingComments: 1
+Cpp11BracedListStyle: false
+SpaceBeforeCpp11BracedList: false
+BreakConstructorInitializers: BeforeComma
+ConstructorInitializerIndentWidth: 4
+PackConstructorInitializers: Never
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortLambdasOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortBlocksOnASingleLine: Empty
+AllowShortEnumsOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+PointerAlignment: Left
+DerivePointerAlignment: false
+IndentCaseLabels: true
+IndentCaseBlocks: false
+EmptyLineBeforeAccessModifier: Always
+EmptyLineAfterAccessModifier: Never
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
+SeparateDefinitionBlocks: Leave
+NamespaceIndentation: None
+FixNamespaceComments: true
+ShortNamespaceLines: 0
+SpaceAfterTemplateKeyword: false
+SpacesInAngles: Never
+AlignAfterOpenBracket: DontAlign
+AlignOperands: DontAlign
+AlignTrailingComments: Never
+AlignConsecutiveAssignments: None
+AlignConsecutiveDeclarations: None
+BinPackArguments: true
+BinPackParameters: true
+RequiresClausePosition: OwnLine
+IndentRequiresClause: true
+LambdaBodyIndentation: Signature
+BreakTemplateDeclarations: Yes
+IncludeBlocks: Merge
+IncludeCategories:
+  - Regex: '^<(windows|intrin|immintrin)\.h>'
+    Priority: 1
+  - Regex: '^<[a-z_0-9]+>'
+    Priority: 2
+  - Regex: '^<sigil/'
+    Priority: 4
+  - Regex: '^<.*>'
+    Priority: 3
+  - Regex: '^"'
+    Priority: 5

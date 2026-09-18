@@ -1,0 +1,15 @@
+build/
+out/
+.vs/
+.vscode/
+.cache/
+*.user
+*.suo
+*.swp
+CMakeUserPresets.json
+CMakeLists.txt.user*
+.idea/
+cmake-build-*/
+__pycache__/
+.claude/
+tools/local.cmd
